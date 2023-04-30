@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+    .board {
+        display: inline-grid;
+        grid-template-columns: 5em 5em 5em 5em 5em 5em 5em;
+        grid-template-rows: 5em 5em 5em 5em 5em 5em;
+        image-rendering: pixelated;
+    }
+
+    .cell {
+        background-image: url("./cell.png");
+        background-size: 5em;
+        width: 5em;
+        height: 5em;
+        /* position: absolute; */
+    }
+    .coin {
+        background-size: 5em;
+        width: 5em;
+        height: 5em;
+        position: relative;
+    }
+    .yellow {
+        background-image: url("./yellowcoin.png");
+    }
+    .red {
+        background-image: url("./redcoin.png");
+    }
+    .ghost {
+        background-image: url("./ghostcoin.png");
+    }
+    .highlight {
+        background-image: url("./highlightcoin.png");
+        position: absolute;
+    }
+
+    .pixel-corners,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 12px),
+    6px calc(100% - 12px),
+    6px calc(100% - 6px),
+    12px calc(100% - 6px),
+    12px 100%,
+    calc(100% - 12px) 100%,
+    calc(100% - 12px) calc(100% - 6px),
+    calc(100% - 6px) calc(100% - 6px),
+    calc(100% - 6px) calc(100% - 12px),
+    100% calc(100% - 12px),
+    100% 12px,
+    calc(100% - 6px) 12px,
+    calc(100% - 6px) 6px,
+    calc(100% - 12px) 6px,
+    calc(100% - 12px) 0px,
+    12px 0px,
+    12px 6px,
+    6px 6px,
+    6px 12px,
+    0px 12px);
+  position: relative;
+}
+.pixel-corners {
+  border: 6px solid transparent;
+}
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.pixel-corners--wrapper .pixel-corners {
+  display: block;
+  clip-path: polygon(6px 12px,
+    12px 12px,
+    12px 6px,
+    calc(100% - 12px) 6px,
+    calc(100% - 12px) 12px,
+    calc(100% - 6px) 12px,
+    calc(100% - 6px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 6px),
+    12px calc(100% - 6px),
+    12px calc(100% - 12px),
+    6px calc(100% - 12px));
+}
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 12px),
+    6px calc(100% - 12px),
+    6px calc(100% - 6px),
+    12px calc(100% - 6px),
+    12px 100%,
+    calc(100% - 12px) 100%,
+    calc(100% - 12px) calc(100% - 6px),
+    calc(100% - 6px) calc(100% - 6px),
+    calc(100% - 6px) calc(100% - 12px),
+    100% calc(100% - 12px),
+    100% 12px,
+    calc(100% - 6px) 12px,
+    calc(100% - 6px) 6px,
+    calc(100% - 12px) 6px,
+    calc(100% - 12px) 0px,
+    12px 0px,
+    12px 6px,
+    6px 6px,
+    6px 12px,
+    0px 12px,
+    0px 50%,
+    6px 50%,
+    6px 12px,
+    12px 12px,
+    12px 6px,
+    calc(100% - 12px) 6px,
+    calc(100% - 12px) 12px,
+    calc(100% - 6px) 12px,
+    calc(100% - 6px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 6px),
+    12px calc(100% - 6px),
+    12px calc(100% - 12px),
+    6px calc(100% - 12px),
+    6px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  display: block;
+  pointer-events: none;
+}
+.pixel-corners::after {
+  margin: -6px;
+}
+
+.dropped {
+    animation-name: drop-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+
+@keyframes drop-animation {
+    0% {
+        top: -1000%;
+    }
+    50% {
+        top: -500%;
+    }
+    75% {
+        top: 0em;
+    }
+    80% {
+        top: -2.5em;
+    }
+    85% {
+        top: 0em;
+    }
+    90% {
+        top: -1em;
+    }
+    95% {
+        top: 0em;
+    }
+}
+</style>
+<body>
+    <div class="board pixel-corners">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell">
+            <div class="yellow coin"></div>
+        </div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell">
+            <div class="red coin"></div>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell">
+            <div class="ghost coin"></div>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell">
+            <div class="highlight coin"></div>
+            <div class="yellow coin dropped"></div>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell">
+            <!-- <div class="highlight coin"></div> -->
+            <div class="red dropped coin"></div>
+        </div>
+    </div>  
+</body>
+</html>
