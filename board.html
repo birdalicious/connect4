@@ -9,24 +9,37 @@
 <style>
     @import url('https://fonts.cdnfonts.com/css/public-pixel');
 
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
     .board {
         display: inline-grid;
-        grid-template-columns: 5em 5em 5em 5em 5em 5em 5em;
-        grid-template-rows: 5em 5em 5em 5em 5em 5em;
+        --board-width: 35vw;
+        width: var(--board-width);
+        height: calc(var(--board-width)/7*6);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         image-rendering: pixelated;
+    }
+    @media only screen and (max-width: 992px) {
+        .board {
+            --board-width: 75vw;
+        }
     }
 
     .cell {
         background-image: url("./cell.png");
-        background-size: 5em;
-        width: 5em;
-        height: 5em;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
         /* position: absolute; */
     }
     .coin {
-        background-size: 5em;
-        width: 5em;
-        height: 5em;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
         position: relative;
     }
     .yellow {
@@ -41,6 +54,8 @@
     .highlight {
         background-image: url("./highlightcoin.png");
         position: absolute;
+        width: calc(var(--board-width)/7);
+        height: calc(var(--board-width)/7);;
     }
 
     .pixel-corners,
@@ -159,7 +174,7 @@
         top: 0em;
     }
     80% {
-        top: -2.5em;
+        top: -2.5%;
     }
     85% {
         top: 0em;
