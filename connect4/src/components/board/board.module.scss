@@ -1,0 +1,14 @@
+.root {
+    display: grid;
+    aspect-ratio : 1 / calc(1/7*6);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    image-rendering: pixelated;
+
+    --board-background: transparent;
+    background-color: var(--board-background);
+}
+
+.root[data-background="dark"] {
+    --board-background: #000;
+}
