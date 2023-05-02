@@ -6,10 +6,18 @@ export interface CellProps {
     coin?: string;
     highlight: boolean;
     dropped: boolean;
+    play: () => void;
+    hover: () => void;
+    skin: string;
 }
 
-export const Cell = ({ className, coin, highlight, dropped }: CellProps) => {
-    return <div className={classNames(styles.root, className)}>
+export const Cell = ({ className, coin, highlight, dropped, play, hover, skin }: CellProps) => {
+    return <div 
+        className={classNames(styles.root, className)}
+        onClick={play}
+        onMouseEnter={hover}
+        data-skin={skin}
+        >
         {coin? 
             <div 
             className={classNames(
@@ -18,7 +26,8 @@ export const Cell = ({ className, coin, highlight, dropped }: CellProps) => {
                 {
                     [styles.dropped]: dropped
                 }
-            )}>
+            )}
+            >
 
             </div>
          : null}
