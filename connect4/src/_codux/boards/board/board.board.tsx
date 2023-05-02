@@ -6,13 +6,16 @@ export default createBoard({
     Board: () => (
         <Board
             board={[
-                [undefined, undefined, undefined, undefined, undefined, undefined, undefined],
-                [undefined, undefined, undefined, undefined, undefined, undefined, undefined],
-                [undefined, undefined, undefined, undefined, undefined, undefined, undefined],
-                [undefined, undefined, undefined, undefined, undefined, undefined, undefined],
-                [undefined, undefined, undefined, undefined, undefined, undefined, undefined],
-                [undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+                [null, null, null, null, null, null, null],
+                [null, null, null, null, null, null, null],
+                [null, null, null, null, null, null, null],
+                [null, null, null, null, null, null, null],
+                [null, null, null, null, null, null, null],
+                [null, null, null, null, null, null, null],
             ]}
+            highlights={[]}
+            play={() => null}
+            hover={() => null}
         />
     ),
     environmentProps: {
