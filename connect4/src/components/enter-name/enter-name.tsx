@@ -11,7 +11,7 @@ export interface EnterNameProps {
 }
 
 export const EnterName = ({ className, name, setName }: EnterNameProps) => {
-    return <>
+    return <div className={styles.root}>
         <div className={classNames(boardStyles.root, corners['pixel-corners'], className)} data-size="large">
             <h3>Enter name</h3>
 
@@ -30,5 +30,5 @@ export const EnterName = ({ className, name, setName }: EnterNameProps) => {
         <div className={styles['play-button']}>
             <TextArea text="Play!" />
         </div>
-    </>;
+    </div>;
 };
