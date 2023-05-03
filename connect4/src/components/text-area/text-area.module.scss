@@ -1,0 +1,28 @@
+.root {
+    padding: 1.5em 2.5em;
+    text-align: center;
+
+    color: white;
+    background-image: url("messageBackgroundLeft.png"), url("messageBackgroundRight.png"), url("messageBackground.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left, right, center;
+    background-size: auto 100%, auto 100%, 100% 100%;
+    image-rendering: pixelated;
+}
+
+.root[data-size="large"] {
+    background-image: url("messageLargeBackgroundLeft.png"), url("messageLargeBackgroundRight.png"), url("messageLargeBackground.png");
+}
+
+.root[data-theme="recessed"] {
+    color: #457694;
+    background-image: url("inputBackgroundLeft.png"), url("inputBackgroundRight.png"), url("inputBackground.png");
+}
+
+.root[data-theme="dark"] {
+    background-image: url("messageDarkBackgroundLeft.png"), url("messageDarkBackgroundRight.png"), url("messageDarkBackground.png");
+}
+
+.root[data-size="large"][data-theme="dark"] {
+    background-image: url("messageLargeDarkBackgroundLeft.png"), url("messageLargeDarkBackgroundRight.png"), url("messageLargeDarkBackground.png");
+}

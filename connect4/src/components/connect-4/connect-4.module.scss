@@ -1,2 +1,9 @@
 .root {
-}
+    width: 30vw;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .root {
+        width: 65vw;
+    }
+  }

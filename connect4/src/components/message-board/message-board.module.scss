@@ -1,17 +1,3 @@
 .root {
-    padding: 1em;
-    text-align: center;
-
-    color: white;
-    // background-color: #2F4F62;
-    background-image: url("messageBackgroundLeft.png"), url("messageBackgroundRight.png"), url("messageBackground.png");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: left, right, center;
-    background-size: auto 100%, auto 100%, 100% 100%;
-    // background-repeat: repeat-x;
-    image-rendering: pixelated;
-}
-
-.root[data-theme="dark"] {
-    background-image: url("messageDarkBackgroundLeft.png"), url("messageDarkBackgroundRight.png"), url("messageDarkBackground.png");
+    margin-bottom: 2.5em;
 }

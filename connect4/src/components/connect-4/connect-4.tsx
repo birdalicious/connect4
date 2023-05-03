@@ -33,7 +33,7 @@ const initialGameState: GameState = {
     ghostPlayer: 3,
     board: generateNewBoard(),
     gameOver: false,
-    message: '',
+    message: 'newgame',
 };
 
 const gameReducer = (state: GameState, action: Action): GameState => {
@@ -41,6 +41,7 @@ const gameReducer = (state: GameState, action: Action): GameState => {
         case 'newGame':
             return {
                 ...initialGameState,
+				message: "newgame",
                 board: generateNewBoard(),
             };
         case 'togglePlayer':
@@ -50,6 +51,7 @@ const gameReducer = (state: GameState, action: Action): GameState => {
             return {
                 ...state,
                 currentPlayer: action.nextPlayer,
+				message: "",
                 board: action.board,
             };
         case 'hover':
