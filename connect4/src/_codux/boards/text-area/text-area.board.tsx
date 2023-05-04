@@ -1,7 +1,7 @@
 import { createBoard } from '@wixc3/react-board';
-import { TextArea } from '../../../components/text-area/text-area';
+import { PixelBoard } from '../../../components/pixel-board/pixel-board';
 
 export default createBoard({
     name: 'TextArea',
-    Board: () => <TextArea text="TextArea" />,
+    Board: () => <PixelBoard text="TextArea" />,
 });

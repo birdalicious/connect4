@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import styles from './message-board.module.scss';
 import corners from '../pixel-corners.module.scss'
-import { TextArea } from '../text-area/text-area';
+import { PixelBoard } from '../pixel-board/pixel-board';
 
 export interface MessageBoardProps {
     className?: string;
@@ -20,16 +20,16 @@ interface GameState {
 const getTextArea = (self: boolean, players: [string, string], state: GameState) => {
     if(!state.gameOver) {
         if(state.message) {
-            return <TextArea text="Ready?..."/>
+            return <PixelBoard>Ready?...</PixelBoard>
         }
-        return <TextArea text={`${self? 'Your' : players[state.playerTurn] + "'s"} Turn`} />
+        return <PixelBoard>{`${self? 'Your' : players[state.playerTurn] + "'s"} Turn`}</PixelBoard>
     }
 
     switch (state.message) {
         case "over":
-            return <TextArea text={`${self? 'You' : players[state.playerTurn]} Won!`} />
+            return <PixelBoard>{`${self? 'You' : players[state.playerTurn]} Won!`}</PixelBoard>
         case "draw":
-            return <TextArea text="Draw..." />
+            return <PixelBoard>Draw...</PixelBoard>
     }
 }
 

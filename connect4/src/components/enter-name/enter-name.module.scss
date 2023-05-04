@@ -12,8 +12,14 @@
 .play-button {
     margin: 1.5em auto;
     width: 50%;
-    cursor: pointer;
+    // cursor: pointer;
 }
+
+// .play-button:active {
+//     div {
+//         background: #345F7E;
+//     }
+// }
 
 @media only screen and (max-width: 650px)  {
     .root {

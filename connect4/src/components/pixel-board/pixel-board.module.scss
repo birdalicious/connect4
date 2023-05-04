@@ -1,0 +1,54 @@
+.root {
+    padding: 1.5em 2.5em;
+    text-align: center;
+
+    color: white;
+    background-image: url("messageBackgroundLeft.png"), url("messageBackgroundRight.png"), url("messageBackground.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left, right, center;
+    background-size: auto 100%, auto 100%, 100% 100%;
+    image-rendering: pixelated;
+
+    caret-color: transparent;
+}
+
+.root[data-clickable="true"] {
+    cursor: pointer;
+}
+
+.root[data-clickable="true"]:active {
+    background: #345F7E;
+}
+
+.root[data-size="large"] {
+    background-image: url("messageLargeBackgroundLeft.png"), url("messageLargeBackgroundRight.png"), url("messageLargeBackground.png");
+}
+
+.root[data-size="xlarge"] {
+    background-image: url("messageXLargeBackgroundLeft.png"), url("messageXLargeBackgroundRight.png"), url("messageXLargeBackground.png");
+}
+
+.root[data-theme="recessed"] {
+    color: #457694;
+    background-image: url("inputBackgroundLeft.png"), url("inputBackgroundRight.png"), url("inputBackground.png");
+}
+.root[data-theme="recessed"][data-size="large"] {
+    color: #457694;
+    background-image: url("inputLargeBackgroundLeft.png"), url("inputLargeBackgroundRight.png"), url("inputLargeBackground.png");
+}
+.root[data-theme="recessed"][data-size="xlarge"] {
+    color: #457694;
+    background-image: url("inputXLargeBackgroundLeft.png"), url("inputXLargeBackgroundRight.png"), url("inputXLargeBackground.png");
+}
+
+.root[data-theme="dark"] {
+    background-image: url("messageDarkBackgroundLeft.png"), url("messageDarkBackgroundRight.png"), url("messageDarkBackground.png");
+}
+
+.root[data-theme="dark"][data-clickable="true"]:active {
+    background: #15375C;
+}
+
+.root[data-theme="dark"][data-size="large"] {
+    background-image: url("messageLargeDarkBackgroundLeft.png"), url("messageLargeDarkBackgroundRight.png"), url("messageLargeDarkBackground.png");
+}

@@ -1,0 +1,37 @@
+.root {
+    display: flex;
+
+    .newRoom {
+        display: flex;
+        flex-direction: column;
+        margin: 5em 2.5em;
+
+        div {
+            margin-bottom: 0.5em;
+            width: 40%;
+            align-self: end;
+        }
+
+        .newRoomInput {
+            width: 100%;
+        }
+    }
+
+    .rooms {
+        div {
+            padding: 0 1.5em;
+            height: 25vh;
+
+            div {
+                height: auto;
+                overflow-y: auto;
+                div {
+                    padding: 1.5em 2.5em;;
+                    overflow: visible;
+                    height: auto; 
+                    margin: 0.5em 0;
+                }
+            }
+        }
+    }
+}
