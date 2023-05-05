@@ -1,0 +1,12 @@
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\bin\Debug\net6.0\Connect4.deps.json
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\bin\Debug\net6.0\Connect4.dll
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\bin\Debug\net6.0\Connect4.pdb
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\Connect4.csproj.AssemblyReference.cache
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\Connect4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\Connect4.AssemblyInfoInputs.cache
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\Connect4.AssemblyInfo.cs
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\Connect4.csproj.CoreCompileInputs.cache
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\Connect4.dll
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\refint\Connect4.dll
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\Connect4.pdb
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4\obj\Debug\net6.0\ref\Connect4.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9CowlsXFSU0MuK7g5Z//O+ukZW0LTxymCZoLn2mZNyk=",
+  "Source": "Connect4Server",
+  "BasePath": "_content/Connect4Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

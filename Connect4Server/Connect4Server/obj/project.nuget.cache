@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "wVoqf4UDcaCBRko3lb8Z0mbFOiIIu4r4OrKrk6VAQRko686CjoJvtvjwqS4AJfTbitSvnAJl+fjeG+WO5i359g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DeveloperTraining\\Desktop\\JackBirdGit\\¶001 - Noughts And Crosses\\connect42\\Connect4Server\\Connect4Server\\Connect4Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\DeveloperTraining\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
