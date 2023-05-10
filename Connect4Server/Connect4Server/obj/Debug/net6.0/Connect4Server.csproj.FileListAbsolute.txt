@@ -25,3 +25,5 @@ C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\conne
 C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4Server\obj\Debug\net6.0\Connect4Server.pdb
 C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4Server\obj\Debug\net6.0\Connect4Server.genruntimeconfig.cache
 C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4Server\obj\Debug\net6.0\ref\Connect4Server.dll
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4Server\bin\Debug\net6.0\Connect4.dll
+C:\Users\DeveloperTraining\Desktop\JackBirdGit\¶001 - Noughts And Crosses\connect42\Connect4Server\Connect4Server\bin\Debug\net6.0\Connect4.pdb

@@ -1,3 +1,4 @@
+using Connect4.Lobbies;
 using Connect4Server.Hubs;
 
 namespace Connect4Server
@@ -16,6 +17,9 @@ namespace Connect4Server
                 .AllowCredentials();
             }));
 
+            builder.Services.AddSingleton<LobbyManager>();
+
+            builder.Services.AddSignalR();
 
             // Add services to the container.
 
@@ -34,6 +38,8 @@ namespace Connect4Server
             }
 
             app.UseHttpsRedirection();
+            
+            app.UseCors();
 
             app.UseAuthorization();
 
